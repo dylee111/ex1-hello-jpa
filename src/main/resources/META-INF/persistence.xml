@@ -14,7 +14,8 @@
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.use_sql_comments" value="true"/>
-            <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
+<!--            <property name="hibernate.jdbc.batch_size" value="10"/>    &lt;!&ndash;batch size를 지정 : 지정한 만큼 SQL이 쌓이면 commit (버퍼링) &ndash;&gt;-->
+             <property name="hibernate.hbm2ddl.auto" value="create" />
         </properties>
     </persistence-unit>
 </persistence>
